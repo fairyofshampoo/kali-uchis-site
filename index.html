@@ -5,11 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kali Uchis</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="script/carousel.js"></script>
 </head>
-<body>
-    <header>
-        
-    </header>
-    
+<body id="home">
+
+<header>
+    <h1>Kali Uchis</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="/pages/redmoon.html">Red Moon in Venus</a></li>
+        <li><a href="/pages/orquideas.html">Orquideas</a></li>
+        <li><a href="/pages/sinmiedo.html">Sin miedo</a></li>
+    </ul>
+</nav>
+
+<div class="carousel-container">
+    <div class="carousel">
+        <div class="carousel-images">
+            <img src="https://static01.nyt.com/images/2023/04/20/multimedia/19KALI-UCHIS-ztlk-esp/19KALI-UCHIS-ztlk-articleLarge.jpg?quality=75&auto=webp&disable=upscale" alt="Kali Uchis en fondo azul con maquillaje para ojos azul">
+            <img src="https://www.santandersmusic.com/media/magazine/kali-uchis-2024-alternative-lg.webp" alt="Kali Uchis acostada en fondo claro con flores alrededor y un vestido rosa rojizo">
+            <img src="https://images-prod.dazeddigital.com/2400/azure/dazed-prod/1230/9/1239380.jpg" alt="Kali Uchis fondo rojo">
+        </div>
+        <button class="prev" onclick="moverCarrusel(-1)">&#10094;</button>
+        <button class="next" onclick="moverCarrusel(1)">&#10095;</button>
+    </div>
+</div>
+
+<section id="bio">
+    <h2>Acerca de Kali Uchis</h2>
+    <figure>
+        <img src="kali-uchis.jpg" alt="Foto de Kali Uchis"> <!-- Imagen de Kali Uchis -->
+        <figcaption>Kali Uchis - Artista, Cantante y Compositora</figcaption>
+    </figure>
+    <p>Kali Uchis es una cantante y compositora conocida por su estilo único y su habilidad para mezclar géneros. Desde su debut, ha cautivado a audiencias en todo el mundo.</p>
+</section>
+
+<aside id="eras">
+    <h3>Eras Musicales</h3>
+    <p>Explora las diferentes etapas de su música:</p>
+    <ul>
+        <li><a href="era1.html">Primera Era: Inicios</a></li>
+        <li><a href="era2.html">Segunda Era: Éxitos y Crecimiento</a></li>
+        <li><a href="era3.html">Tercera Era: Exploración y Evolución</a></li>
+    </ul>
+</aside>
+
+<section id="noticias">
+    <h2>Noticias y Actualizaciones</h2>
+    <article>
+        <h3>Nueva Gira Mundial</h3>
+        <p>¡Kali Uchis ha anunciado su próxima gira mundial! Visita esta sección para más detalles.</p>
+    </article>
+    <article>
+        <h3>Colaboraciones Recientes</h3>
+        <p>Descubre las últimas colaboraciones de Kali con artistas de todo el mundo.</p>
+    </article>
+</section>
+
+<footer id="contacto">
+    <h2>Contacto</h2>
+    <p>Para consultas de prensa, por favor escribe a <a href="mailto:contacto@kaliuchis.com">contacto@kaliuchis.com</a></p>
+    <p>Síguela en redes sociales: 
+        <a href="https://instagram.com/kaliuchis" target="_blank">Instagram</a> | 
+        <a href="https://twitter.com/kaliuchis" target="_blank">Twitter</a> | 
+        <a href="https://facebook.com/kaliuchis" target="_blank">Facebook</a>
+    </p>
+</footer>
+
 </body>
 </html>
