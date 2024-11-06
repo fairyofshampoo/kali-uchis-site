@@ -1,79 +1,120 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kali Uchis</title>
+    <title>Kali Uchis - Página Oficial</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="script/carousel.js"></script>
 </head>
+
 <body id="home">
 
-<header>
-    <h1>Kali Uchis</h1>
-</header>
+    <header>
+        <h1>Kali Uchis</h1>
+    </header>
 
-<nav>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="/pages/redmoon.html">Red Moon in Venus</a></li>
-        <li><a href="/pages/orquideas.html">Orquideas</a></li>
-        <li><a href="/pages/sinmiedo.html">Sin miedo</a></li>
-    </ul>
-</nav>
+    <nav>
+        <ul>
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="/pages/redmoon.html">Red Moon in Venus</a></li>
+            <li><a href="/pages/orquideas.html">Orquídeas</a></li>
+            <li><a href="/pages/sinmiedo.html">Sin Miedo</a></li>
+        </ul>
+    </nav>
 
-<div class="carousel-container">
-    <div class="carousel">
-        <div class="carousel-images">
-            <img src="https://static01.nyt.com/images/2023/04/20/multimedia/19KALI-UCHIS-ztlk-esp/19KALI-UCHIS-ztlk-articleLarge.jpg?quality=75&auto=webp&disable=upscale" alt="Kali Uchis en fondo azul con maquillaje para ojos azul">
-            <img src="https://www.santandersmusic.com/media/magazine/kali-uchis-2024-alternative-lg.webp" alt="Kali Uchis acostada en fondo claro con flores alrededor y un vestido rosa rojizo">
-            <img src="https://images-prod.dazeddigital.com/2400/azure/dazed-prod/1230/9/1239380.jpg" alt="Kali Uchis fondo rojo">
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="https://ichef.bbci.co.uk/ace/standard/1024/cpsprodpb/9693/production/_102774583_kali1.jpg">
+                <img src="https://www.santandersmusic.com/media/magazine/kali-uchis-2024-alternative-lg.webp"
+                    alt="Kali Uchis acostada en fondo claro con flores alrededor y un vestido rosa rojizo">
+                <img src="https://images-prod.dazeddigital.com/2400/azure/dazed-prod/1230/9/1239380.jpg"
+                    alt="Kali Uchis fondo rojo">
+            </div>
+            <button class="prev" onclick="moverCarrusel(-1)">&#10094;</button>
+            <button class="next" onclick="moverCarrusel(1)">&#10095;</button>
         </div>
-        <button class="prev" onclick="moverCarrusel(-1)">&#10094;</button>
-        <button class="next" onclick="moverCarrusel(1)">&#10095;</button>
     </div>
-</div>
 
-<section id="bio">
-    <h2>Acerca de Kali Uchis</h2>
-    <figure>
-        <img src="kali-uchis.jpg" alt="Foto de Kali Uchis"> <!-- Imagen de Kali Uchis -->
-        <figcaption>Kali Uchis - Artista, Cantante y Compositora</figcaption>
-    </figure>
-    <p>Kali Uchis es una cantante y compositora conocida por su estilo único y su habilidad para mezclar géneros. Desde su debut, ha cautivado a audiencias en todo el mundo.</p>
-</section>
+    <section id="bio">
+        <div class="bio-content">
+            <img src="https://i.pinimg.com/736x/49/48/cf/4948cfe0ae9e901c36e9a15ad49e1765.jpg" class="kali-png">
+            <div class="bio-text">
+                <p>Kali Uchis es una cantante y compositora colombiana-estadounidense cuyo estilo combina elementos de
+                    R&B, soul y música latina. Desde su primer mixtape, <em>Drunken Babble</em>, ha capturado la
+                    atención de la industria musical con su estética única y letras introspectivas.</p>
+                <p>Su música aborda temas de amor, identidad y resistencia. Con álbumes aclamados como
+                    <em>Isolation</em> y <em>Sin Miedo (del Amor y Otros Demonios)</em>, Kali Uchis ha ganado
+                    reconocimiento global y una base de fans leal.</p>
+                <button id="see-more"><a href="https://es.wikipedia.org/wiki/Kali_Uchis" target="_blank">Leer
+                        más</a></button>
+            </div>
+        </div>
+    </section>
 
-<aside id="eras">
-    <h3>Eras Musicales</h3>
-    <p>Explora las diferentes etapas de su música:</p>
-    <ul>
-        <li><a href="era1.html">Primera Era: Inicios</a></li>
-        <li><a href="era2.html">Segunda Era: Éxitos y Crecimiento</a></li>
-        <li><a href="era3.html">Tercera Era: Exploración y Evolución</a></li>
-    </ul>
-</aside>
+    <div class="content-wrapper">
+        <aside id="most-listened">
+            <h2>Lo Más Escuchado</h2>
+            <div class="song-card">
+                <img src="https://i.scdn.co/image/ab67616d0000b273044a5466dac00f7b3c570b99" alt="Imagen de Telepatía">
+                <div class="song-info">
+                    <h3>Telepatía</h3>
+                    <p>Un éxito global que combina letras románticas con un ritmo suave de reguetón.</p>
+                    <button><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Escuchar</a></button>
+                </div>
+            </div>
+            <div class="song-card">
+                <img src="https://i.scdn.co/image/ab67616d0000b273b13b4a434585f484548e42c9" alt="Imagen de Moonlight">
+                <div class="song-info">
+                    <h3>Moonlight</h3>
+                    <p>Una balada nostálgica que destaca la voz única de Kali Uchis.</p>
+                    <button><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Escuchar</a></button>
+                </div>
+            </div>
+            <div class="song-card">
+                <img src="https://cdns-images.dzcdn.net/images/cover/6029bd790f31c5112f62c352adb27572/500x500.jpg" alt="Imagen de After Storm">
+                <div class="song-info">
+                    <h3>After The Storm</h3>
+                    <p>Una colaboración con Tyler, the Creator y Bootsy Collins que celebra la resiliencia.</p>
+                    <button><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Escuchar</a></button>
+                </div>
+            </div>
+        </aside>
 
-<section id="noticias">
-    <h2>Noticias y Actualizaciones</h2>
-    <article>
-        <h3>Nueva Gira Mundial</h3>
-        <p>¡Kali Uchis ha anunciado su próxima gira mundial! Visita esta sección para más detalles.</p>
-    </article>
-    <article>
-        <h3>Colaboraciones Recientes</h3>
-        <p>Descubre las últimas colaboraciones de Kali con artistas de todo el mundo.</p>
-    </article>
-</section>
+        <section id="colaboraciones">
+            <h2>Colaboraciones Destacadas</h2>
+            <article>
+                <h3>Con Tyler, the Creator</h3>
+                <p>La colaboración entre Kali Uchis y Tyler, the Creator en la canción "See You Again" es una pieza destacada del álbum de Kali, Isolation, lanzado en 2018. La canción es un suave y nostálgico homenaje al amor perdido, explorando temas de deseo, anhelo y la esperanza de un reencuentro. </p>
+                <h4>Significado</h4>
+                <p>"See You Again" se centra en la idea de una relación que ha terminado, pero donde todavía persiste un fuerte vínculo emocional. La letra de la canción refleja la lucha interna de Kali al lidiar con la ausencia de una persona amada, y la sensación de que, a pesar de la separación, hay un deseo de volver a encontrarse. Esta dualidad entre el amor y la pérdida se hace evidente a lo largo de la canción, evocando sentimientos de melancolía y esperanza.</p>
+            </article>
+            <article>
+                <h3>Con Peso Pluma</h3>
+                <h4>Significado</h4>
+                <p> En esta canción, Kali explora temas como el amor, la vulnerabilidad y la devoción. Las palabras expresan admiración y reverencia por una pareja romántica, comparando su presencia con la de un ángel. <br> A lo largo de la canción, canta sobre la profunda conexión emocional que comparte con su pareja, describiendo su amor como puro y trascendente. La letra transmite una sensación de asombro y gratitud por la forma en que su pareja la hace sentir, elevándolos a ambos a un estatus divino.</p>
+            </article>
+            <article>
+                <h3>Con Gorillaz</h3>
+                <p>La canción "She's My Collar," que forma parte del álbum Humanz, lanzado en 2017. Esta canción presenta una combinación de sonidos electrónicos, hip-hop y R&B, reflejando la fusión de estilos que caracteriza a ambos artistas.</p>
+                <h4>Significado</h4>
+                <p>"She's My Collar" aborda temas de amor, devoción y la conexión emocional entre dos personas. La letra sugiere una relación intensa y casi simbiótica, donde la persona amada es descrita como un "collar", un accesorio que representa pertenencia y conexión. Esta metáfora transmite la idea de que la relación es una parte esencial de la identidad del narrador, simbolizando el deseo de estar cerca de la persona amada.</p>
+            </article>
+        </section>
+    </div>
 
-<footer id="contacto">
-    <h2>Contacto</h2>
-    <p>Para consultas de prensa, por favor escribe a <a href="mailto:contacto@kaliuchis.com">contacto@kaliuchis.com</a></p>
-    <p>Síguela en redes sociales: 
-        <a href="https://instagram.com/kaliuchis" target="_blank">Instagram</a> | 
-        <a href="https://twitter.com/kaliuchis" target="_blank">Twitter</a> | 
-        <a href="https://facebook.com/kaliuchis" target="_blank">Facebook</a>
-    </p>
-</footer>
+    <footer id="contact">
+        <div class="social-icons">
+            <a href="https://instagram.com/kaliuchis" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/kaliuchis" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://facebook.com/kaliuchis" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        <p>&copy; 2024 Kali Uchis. Todos los derechos reservados.</p>
+    </footer>
 
 </body>
+
 </html>

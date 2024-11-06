@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orquídeas</title>
+    <link rel="stylesheet" href="/css/orquideas.css">
+    <script src="/script/carousel.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Kali Uchis: Orquídeas</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="/pages/redmoon.html">Red Moon in Venus</a></li>
+            <li><a href="/pages/orquideas.html">Orquídeas</a></li>
+            <li><a href="/pages/sinmiedo.html">Sin Miedo</a></li>
+        </ul>
+    </nav>
+
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="/assets/orquidea1.jpg">
+                <img src="/assets/orquidea2.jpg">
+                <img src="/assets/orquidea3.jpg">
+            </div>
+            <button class="prev" onclick="moverCarrusel(-1)">&#10094;</button>
+            <button class="next" onclick="moverCarrusel(1)">&#10095;</button>
+        </div>
+    </div>
+
+    <section>
+        <h2>Generalidades</h2>
+        <ul>
+            <li>
+                <p id="info">Fecha de lanzamiento:</p>
+                <p id="datos">12 de Enero de 2024</p>
+            </li>
+            <li>
+                <p id="info">Número de canciones:</p>
+                <p id="datos">14 Canciones + 4 de segunda parte</p>
+            </li>
+            <li>
+                <p id="info">Duración total:</p>
+                <p id="datos">57 minutos 55 segundos</p>
+            </li>
+        </ul>
+    </section>
+
+    <section class="info-album">
+        <h2>¿Qué significa la orquídea para Kali?</h2>
+
+        <div class="album-info">
+            <p id="albumtext">“La orquídea es la flor nacional de Colombia, y tenemos más especies de orquídeas que en
+                cualquier otro lugar del mundo. Siempre me he sentido claramente intrigada y magnetizada por esta flor.
+                Este álbum se inspira en el encanto atemporal, misterioso, místico, impactante, grácil y sensual de la
+                orquídea. Con este vasto alcance de nueva energía, deseo redefinir la forma en que vemos a las latinas
+                en la música”.—Kali Uchis (2023)</p>
+        </div>
+
+        <aside class="spotify-player">
+            <iframe style="border-radius:12px"
+                src="https://open.spotify.com/embed/album/5U20AVSsUvycGtWip4XQfo?utm_source=generator" width="100%"
+                height="152" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+        </aside>
+    </section>
+
+</body>
+
+</html>

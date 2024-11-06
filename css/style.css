@@ -1,20 +1,69 @@
+/* General resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d9ccdd; /* Fondo oscuro */
+    color: #d5c0cb; /* Texto claro */
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 1rem;
+    background: #be91a3; /* Fondo intermedio para el header */
+    color: whitesmoke; /* Texto claro */
+}
+
+header h1 {
+    font-family: 'Georgia', serif;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #af8780;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: #ebe4ec;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* Carousel */
 .carousel-container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 20px 0;
 }
 
 .carousel {
     position: relative;
-    width: 80%; 
-    width: 800px;
-    height: 400px;
+    width: 100%;
+    height: 35em;
     overflow: hidden;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    background-color: #fff;
 }
 
 .carousel-images {
@@ -30,19 +79,20 @@
 .carousel-images img.active {
     display: block;
 }
+
 .prev, .next {
     position: absolute;
     top: 50%;
-    width: auto;
     padding: 10px;
     margin-top: -22px;
-    color: white;
+    color: #d5c0cb;
     font-weight: bold;
     font-size: 18px;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
 .prev {
@@ -54,5 +104,207 @@
 }
 
 .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Bio section */
+#bio {
+    background: url('https://carvercentercatalyst.com/wp-content/uploads/2023/10/unnamed-5.png') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20em;
+}
+
+.bio-content {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 1000px;
+}
+
+.kali-png {
+    max-width: 250px;
+    margin-right: 20px;
+}
+
+.bio-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+
+#see-more {
+    display: block;
+    margin: 1rem auto 0;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #9b6479;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#see-more a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#see-more:hover {
+    background-color: #be91a3;
+}
+
+.bio-text h2 {
+    font-size: 2rem;
+    color: #d5c0cb;
+    margin-bottom: 0.5rem;
+}
+
+.bio-text p {
+    font-size: 1.1rem;
+    color: #25292e; 
+    line-height: 1.5;
+}
+
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+
+#most-listened {
+    border-radius: 8px;
+    padding: 2rem;
+    background-color: rgba(245, 245, 245, 0.815);
+    flex: 0 0 20%; 
+}
+
+#most-listened h2 {
+    color: #93204f;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.song-card {
+    background: white;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: #25292e;
+}
+
+.song-card img {
+    max-width: 100%;
+    height: auto; 
+    aspect-ratio: 1; 
+    border-radius: 8px;
+}
+
+.song-info {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.song-info h3 {
+    color: #93204f; 
+    font-size: 1.3rem;
+}
+
+.song-info button {
+    background-color: #93204f; 
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.song-info button a {
+    color: white;
+    text-decoration: none;
+}
+
+.song-info button:hover {
+    background-color: #7b90b1; 
+}
+
+/* Colaboraciones section */
+#colaboraciones {
+    border-radius: 10px;
+    padding: 2rem;
+    background-color: whitesmoke; 
+    flex: 1; 
+}
+
+#colaboraciones h2 {
+    color: #7b90b1;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#colaboraciones article {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: #7b90b1;
+    border-radius: 8px;
+}
+
+#colaboraciones article h3 {
+    font-size: 1.4rem;
+    color: whitesmoke;
+    margin-bottom: 0.5rem;
+}
+
+#colaboraciones article h4{
+    color: #25292d;
+}
+
+#colaboraciones article p {
+    font-size: 1rem;
+    color: whitesmoke;
+    line-height: 1.4;
+}
+
+/* Footer */
+footer {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #25292e;
+}
+
+footer a {
+    color: #d5c0cb;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+footer a:hover {
+    color: #ff6699;
+}
+
+footer .fab {
+    font-size: 1.2rem;
+    transition: color 0.3s;
 }
