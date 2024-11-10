@@ -5,20 +5,28 @@
     box-sizing: border-box;
 }
 
+.header-content {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
 /* Body */
 body {
     font-family: Arial, sans-serif;
-    background-color: #d9ccdd; /* Fondo oscuro */
-    color: #d5c0cb; /* Texto claro */
+    background-color: #d9ccdd;
+    color: #38423e;
 }
 
 /* Header */
 header {
     text-align: center;
     padding: 1rem;
-    background: #000000f9;
+    background: #38423eea;
     color: whitesmoke;
-    transition: opacity 0.3s ease; /* Transición suave para opacidad */
+    transition: opacity 0.3s ease;
 }
 
 header h1 {
@@ -31,9 +39,11 @@ header h1 {
 nav {
     display: flex;
     justify-content: center;
-    background: linear-gradient(to bottom, #000000f9, #0000008a); /* Degradado oscuro */
+    background: linear-gradient(to bottom, #38423eea, #38423e76);
     padding: 1rem;
     transition: opacity 0.3s ease;
+    border-bottom: none;
+    box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.5);
 }
 
 nav ul {
@@ -52,8 +62,65 @@ nav a {
 nav a:hover {
     color: #be91a3;
 }
+/* Hero Section */
+#hero {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: auto;
+}
 
-/* Bio section */
+/* Contenedor que envuelve la imagen y el botón */
+.hero-content {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Imagen de fondo */
+.kali-hero {
+    width: 100%;
+    aspect-ratio: 16/9;
+    height: auto;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Estilos del botón */
+#play-button {
+    background-color: #b5869d; 
+    border: none;
+    padding: 0.8rem 2rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    position: absolute; 
+    z-index: 10; 
+    bottom: 10rem; 
+    box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.5);
+}
+
+#play-button a {
+    color: white;
+    text-decoration: none;
+}
+
+#play-button:hover {
+    background-color: #b34e6a;
+}
+
+
+
 #bio {
     background: url('https://carvercentercatalyst.com/wp-content/uploads/2023/10/unnamed-5.png') no-repeat center center;
     background-size: cover;
@@ -119,114 +186,143 @@ nav a:hover {
     line-height: 1.5;
 }
 
-
-.content-wrapper {
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-    padding: 2rem;
+#best-songs {
+    background-image: url('https://www.radioponiente.com/imagenes/noticias/fotonoticia-14271.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 50px 0;
 }
 
-
-#most-listened {
-    border-radius: 8px;
-    padding: 2rem;
-    background-color: rgba(245, 245, 245, 0.815);
-    flex: 0 0 20%; 
+#best-songs::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
 }
 
-#most-listened h2 {
-    color: #93204f;
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
+#best-songs-h2 {
+    color: white;
+    font-size: 2rem;
     text-align: center;
+    margin-bottom: 20px;
+    z-index: 2;
 }
 
 .song-card {
-    background: white;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    color: #25292e;
+    display: inline-block;
+    width: 30%;
+    margin: 15px;
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
 }
 
 .song-card img {
-    max-width: 100%;
-    height: auto; 
-    aspect-ratio: 1; 
-    border-radius: 8px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 
-.song-info {
-    text-align: center;
-    margin-top: 1rem;
+.song-card .song-info {
+    padding: 20px;
 }
 
-.song-info h3 {
-    color: #93204f; 
-    font-size: 1.3rem;
+.song-card .song-info h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
 }
 
-.song-info button {
-    background-color: #93204f; 
-    color: white;
+.song-card .song-info p {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.song-card .song-info button {
+    background-color: #b5869d;
     border: none;
-    padding: 0.5rem 1rem;
+    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 1rem;
-    transition: background-color 0.3s;
+    font-size: 1em;
 }
 
-.song-info button a {
+.song-card .song-info button a {
     color: white;
     text-decoration: none;
 }
 
-.song-info button:hover {
-    background-color: #7b90b1; 
+.song-card:hover {
+    transform: translateY(-10px);
 }
 
-/* Colaboraciones section */
-#colaboraciones {
-    border-radius: 10px;
-    padding: 2rem;
-    background-color: whitesmoke; 
-    flex: 1; 
+.song-card:hover .song-info button {
+    background-color: #b34e6a;
 }
 
-#colaboraciones h2 {
-    color: #7b90b1;
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
+#collabs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+#collabs h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
-#colaboraciones article {
-    margin-bottom: 1.5rem;
-    padding: 1rem;
-    background: #7b90b1;
+#collabs > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.collab-img {
+    width: 50%;
+    object-fit: cover;
+    padding: 10px;
+    margin-right: 20px;
     border-radius: 8px;
 }
 
-#colaboraciones article h3 {
-    font-size: 1.4rem;
-    color: whitesmoke;
-    margin-bottom: 0.5rem;
+aside {
+    width: 50%;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-#colaboraciones article h4{
-    color: #25292d;
+aside p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
 }
 
-#colaboraciones article p {
-    font-size: 1rem;
-    color: whitesmoke;
-    line-height: 1.4;
+aside p strong {
+    font-weight: bold;
+    color: #333;
+}
+
+.social-icons a {
+    color: #d5c0cb;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ff6699;
 }
 
 /* Footer */
@@ -253,4 +349,9 @@ footer a:hover {
 footer .fab {
     font-size: 1.2rem;
     transition: color 0.3s;
+}
+
+footer p {
+    color: #d5c0cb;
+    margin-top: 1rem;
 }

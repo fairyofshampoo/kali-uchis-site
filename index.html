@@ -7,23 +7,34 @@
     <title>Kali Uchis - Página Oficial</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="script/carousel.js"></script>
 </head>
 
 <body id="home">
 
-    <header>
-        <h1>Kali Uchis</h1>
-    </header>
+    <section class="header-content">
+        <header>
+            <h1>Kali Uchis</h1>
+        </header>
 
-    <nav>
-        <ul>
-            <li><a href="/index.html">Inicio</a></li>
-            <li><a href="/pages/redmoon.html">Red Moon in Venus</a></li>
-            <li><a href="/pages/orquideas.html">Orquídeas</a></li>
-            <li><a href="/pages/sinmiedo.html">Sin Miedo</a></li>
-        </ul>
-    </nav>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/pages/redmoon.html">Red Moon in Venus</a></li>
+                <li><a href="/pages/orquideas.html">Orquídeas</a></li>
+                <li><a href="/pages/sinmiedo.html">Sin Miedo</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section id="hero">
+        <div class="hero-content">
+            <img src="https://cdn.koncertomania.pl/file/eventmediabackup/81_1/17050596695X5folqgslNPczQT43LMthJZWGuVJRAPPF5e1vuuQhk2RbVVeH.jpg"
+                alt="Kali Uchis" class="kali-hero">
+            <button id="play-button"><a href="https://www.youtube.com/channel/UCQTuAezPu6MOpcIJ1Tz9dNA"
+                    target="_blank">Escuchar</a></button>
+        </div>
+    </section>
+
 
     <section id="bio">
         <div class="bio-content">
@@ -34,63 +45,66 @@
                     atención de la industria musical con su estética única y letras introspectivas.</p>
                 <p>Su música aborda temas de amor, identidad y resistencia. Con álbumes aclamados como
                     <em>Isolation</em> y <em>Sin Miedo (del Amor y Otros Demonios)</em>, Kali Uchis ha ganado
-                    reconocimiento global y una base de fans leal.</p>
+                    reconocimiento global y una base de fans leal.
+                </p>
                 <button id="see-more"><a href="https://es.wikipedia.org/wiki/Kali_Uchis" target="_blank">Leer
                         más</a></button>
             </div>
         </div>
     </section>
 
-    <div class="content-wrapper">
-        <aside id="most-listened">
-            <h2>Lo Más Escuchado</h2>
-            <div class="song-card">
-                <img src="https://i.scdn.co/image/ab67616d0000b273044a5466dac00f7b3c570b99" alt="Imagen de Telepatía">
-                <div class="song-info">
-                    <h3>Telepatía</h3>
-                    <p>Un éxito global que combina letras románticas con un ritmo suave de reguetón.</p>
-                    <button><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Escuchar</a></button>
-                </div>
+    <section id="best-songs">
+        <h2 id="best-songs-h2">Canciones populares</h2>
+        <div class="song-card">
+            <img src="https://i.scdn.co/image/ab67616d0000b273044a5466dac00f7b3c570b99" alt="Imagen de Telepatía">
+            <div class="song-info">
+                <h3>Telepatía</h3>
+                <p>Un éxito global que combina letras románticas con un ritmo suave de reguetón.</p>
+                <button><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Escuchar</a></button>
             </div>
-            <div class="song-card">
-                <img src="https://i.scdn.co/image/ab67616d0000b273b13b4a434585f484548e42c9" alt="Imagen de Moonlight">
-                <div class="song-info">
-                    <h3>Moonlight</h3>
-                    <p>Una balada nostálgica que destaca la voz única de Kali Uchis.</p>
-                    <button><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Escuchar</a></button>
-                </div>
+        </div>
+        <div class="song-card">
+            <img src="https://i.scdn.co/image/ab67616d0000b273b13b4a434585f484548e42c9" alt="Imagen de Moonlight">
+            <div class="song-info">
+                <h3>Moonlight</h3>
+                <p>Una balada nostálgica que destaca la voz única de Kali Uchis.</p>
+                <button><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Escuchar</a></button>
             </div>
-            <div class="song-card">
-                <img src="https://cdns-images.dzcdn.net/images/cover/6029bd790f31c5112f62c352adb27572/500x500.jpg" alt="Imagen de After Storm">
-                <div class="song-info">
-                    <h3>After The Storm</h3>
-                    <p>Una colaboración con Tyler, the Creator y Bootsy Collins que celebra la resiliencia.</p>
-                    <button><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Escuchar</a></button>
-                </div>
+        </div>
+        <div class="song-card">
+            <img src="https://cdns-images.dzcdn.net/images/cover/6029bd790f31c5112f62c352adb27572/500x500.jpg"
+                alt="Imagen de After Storm">
+            <div class="song-info">
+                <h3>After The Storm</h3>
+                <p>Una colaboración con Tyler, the Creator y Bootsy Collins que celebra la resiliencia.</p>
+                <button><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Escuchar</a></button>
             </div>
-        </aside>
+        </div>
+    </section>
 
-        <section id="colaboraciones">
-            <h2>Colaboraciones Destacadas</h2>
-            <article>
-                <h3>Con Tyler, the Creator</h3>
-                <p>La colaboración entre Kali Uchis y Tyler, the Creator en la canción "See You Again" es una pieza destacada del álbum de Kali, Isolation, lanzado en 2018. La canción es un suave y nostálgico homenaje al amor perdido, explorando temas de deseo, anhelo y la esperanza de un reencuentro. </p>
-                <h4>Significado</h4>
-                <p>"See You Again" se centra en la idea de una relación que ha terminado, pero donde todavía persiste un fuerte vínculo emocional. La letra de la canción refleja la lucha interna de Kali al lidiar con la ausencia de una persona amada, y la sensación de que, a pesar de la separación, hay un deseo de volver a encontrarse. Esta dualidad entre el amor y la pérdida se hace evidente a lo largo de la canción, evocando sentimientos de melancolía y esperanza.</p>
-            </article>
-            <article>
-                <h3>Con Peso Pluma</h3>
-                <h4>Significado</h4>
-                <p> En esta canción, Kali explora temas como el amor, la vulnerabilidad y la devoción. Las palabras expresan admiración y reverencia por una pareja romántica, comparando su presencia con la de un ángel. <br> A lo largo de la canción, canta sobre la profunda conexión emocional que comparte con su pareja, describiendo su amor como puro y trascendente. La letra transmite una sensación de asombro y gratitud por la forma en que su pareja la hace sentir, elevándolos a ambos a un estatus divino.</p>
-            </article>
-            <article>
-                <h3>Con Gorillaz</h3>
-                <p>La canción "She's My Collar," que forma parte del álbum Humanz, lanzado en 2017. Esta canción presenta una combinación de sonidos electrónicos, hip-hop y R&B, reflejando la fusión de estilos que caracteriza a ambos artistas.</p>
-                <h4>Significado</h4>
-                <p>"She's My Collar" aborda temas de amor, devoción y la conexión emocional entre dos personas. La letra sugiere una relación intensa y casi simbiótica, donde la persona amada es descrita como un "collar", un accesorio que representa pertenencia y conexión. Esta metáfora transmite la idea de que la relación es una parte esencial de la identidad del narrador, simbolizando el deseo de estar cerca de la persona amada.</p>
-            </article>
-        </section>
-    </div>
+    <section id="collabs">
+        <h2>Colaboraciones Destacadas</h2>
+        <div>
+            <img src="https://i.pinimg.com/736x/2d/30/0c/2d300caddca0e7dc3a50634d069f7a71.jpg" class="collab-img">
+        <aside>
+            <p><strong>Con Tyler, the Creator</strong></p>
+            <p> La letra de la canción refleja la lucha interna de Kali al lidiar con la
+                ausencia de una persona amada, y la sensación de que, a pesar de la separación, hay un deseo de
+                volver a encontrarse. Esta dualidad entre el amor y la pérdida se hace evidente a lo largo de la
+                canción, evocando sentimientos de melancolía y esperanza.</p>
+            <p><strong>Con Peso Pluma</strong></p>
+            <p> A lo largo de la canción, canta sobre la profunda conexión emocional que comparte con su
+                pareja, describiendo su amor como puro y trascendente. La letra transmite una sensación de asombro y
+                gratitud por la forma en que su pareja la hace sentir, elevándolos a ambos a un estatus divino.</p>
+            <p><strong>Con Gorillaz</strong></p>
+            <p>"She's My Collar" aborda temas de amor, devoción y la conexión emocional entre dos personas. La letra
+                sugiere una relación intensa y casi simbiótica, donde la persona amada es descrita como un "collar",
+                un accesorio que representa pertenencia y conexión. Esta metáfora transmite la idea de que la
+                relación es una parte esencial de la identidad del narrador, simbolizando el deseo de estar cerca de
+                la persona amada.</p>
+        </aside>
+        </div>
+    </section>
 
     <footer id="contact">
         <div class="social-icons">
